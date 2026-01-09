@@ -1,0 +1,42 @@
+{
+  "name": "@repo/design-system",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@repo/config": "workspace:*",
+    "@repo/storybook": "workspace:*",
+    "@storybook/addon-docs": "^10.1.11",
+    "@storybook/react-vite": "^10.1.11",
+    "@testing-library/react": "^16.3.1",
+    "@types/node": "^24.10.4",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.2",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "eslint-plugin-storybook": "^10.1.11",
+    "globals": "^16.5.0",
+    "jsdom": "^27.4.0",
+    "storybook": "^10.1.11",
+    "style-dictionary": "^5.1.3",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.52.0",
+    "vite": "^7.3.1"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./theme.css": "./src/theme/theme.css"
+  }
+}

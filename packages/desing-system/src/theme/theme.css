@@ -1,0 +1,31 @@
+/* 1) Tokens base (de Supernova) */
+@import "../tokens/supernova/tokens.css";
+
+/* 2) Alias semánticos (lo que consumen tus componentes) */
+:root {
+  /* Texto y fondos (ejemplos, ajusta a tus nombres reales) */
+  --color-text: var(--text-900);
+  --color-bg: var(--bg-0);
+
+  /* Colores semánticos generales */
+  --color-danger: var(--danger-400);
+  --color-success: var(--status-success-400);
+  --color-warning: var(--status-warning-400);
+  --color-info: var(--status-info-400);
+
+  /* BRAND (se define por tema abajo) */
+  --color-brand: var(--primary-400); /* fallback */
+}
+
+/* 3) Tema por app: solo cambia el brand */
+[data-suite-theme="blue"] {
+  --color-brand: var(--primary-400);
+}
+
+[data-suite-theme="green"] {
+  --color-brand: var(--secondary-400);
+}
+
+[data-suite-theme="red"] {
+  --color-brand: var(--tertiary-400);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "suite-monorepo-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "web-admin": "pnpm --filter @repo/web-admin dev",
+    "storybook": "pnpm --filter @repo/storybook storybook",
+    "storybook:build": "pnpm --filter @repo/storybook build",
+    "sync:tokens": "node tooling/scripts/sync-tokens.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.27.0",
+  "devDependencies": {
+    "turbo": "^2.7.3",
+    "typescript": "^5.9.3"
+  }
+}

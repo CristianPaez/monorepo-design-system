@@ -1,0 +1,12 @@
+:root {
+  --primary-400: #5791fd;
+  --secondary-400: #009929;
+  --tertiary-400: #820119;
+
+  --text-900: #0f0f0f;
+  --bg-0: #ffffff;
+  --danger-400: #fc2c52;
+  --status-success-400: #98ff96;
+  --radius-md: 10px;
+  --space-sm: 8px;
+}
